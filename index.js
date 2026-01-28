@@ -1,12 +1,7 @@
 //object//
 
-const phone ={
-    brand: "Apple",
-    model: "17 pro max",
-    color: "White",
-}
 
-console.log(phone);
+
 
 
 //
@@ -23,7 +18,51 @@ const laptop={
         chip: "M5",
         display_quality: "2k",
     }
-}
+};
 
 
 console.log(laptop);
+
+
+
+//--------------Get Property---------------//
+
+const car={
+    brand:"BMW",
+    name: "BMW M5 Edition",
+    model:"M5",
+    price: 3000000,
+}
+
+console.log(car.price);
+//
+const usd = car.price;
+console.log(usd);
+//
+//
+//
+console.log(car["brand"]);
+//
+const company = car["brand"];
+console.log(company);
+
+
+
+
+
+
+
+
+const phone ={
+    brand: "Apple",
+    model: "17 pro max",
+    'color': ["white","Black","Pink"]
+};
+
+console.log(phone['color']);
+
+phone["model"] = "18 pro max";
+console.log(phone.model);
+//
+phone.model = "18 pro max";
+console.log(phone["model"]);
